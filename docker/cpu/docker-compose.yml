@@ -1,6 +1,7 @@
 name: kokoro-fastapi-cpu
 services:
   kokoro-tts:
+    user: root
     build:
       context: ../..
       dockerfile: docker/cpu/Dockerfile
